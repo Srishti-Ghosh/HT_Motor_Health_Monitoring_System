@@ -56,7 +56,6 @@ with st.container():
             if users.get(username) == hash_password(password):
                 st.session_state.logged_in = True
                 st.session_state.user = username
-                st.success("✅ Login successful! Redirecting...")
                 st.switch_page("pages/Home.py")
             else:
                 st.error("❌ Invalid username or password.")
