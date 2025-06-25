@@ -15,7 +15,7 @@ def score_tdtu(val): return 10 if val < abs(0.8) else 8 if val < abs(1.0) else 6
 def score_captip(val): return 10 if val < 5 else 8 if val < 10 else 6 if val < 15 else 2
 
 # Page setup
-st.set_page_config(page_title="RUL")
+st.set_page_config("HT Motor Health & RUL", layout="wide", page_icon="⚙️")
 
 if not st.session_state.get("logged_in", False):
     st.error("Please login first.")
@@ -62,7 +62,7 @@ with st.sidebar:
 
     # 🔓 Logout
     if st.button("🔓 Logout"):
-        st.switch_page("pages/Logout.py")  
+        st.switch_page("pages/Logout.py")   
     
     st.markdown("""
         <div style='
