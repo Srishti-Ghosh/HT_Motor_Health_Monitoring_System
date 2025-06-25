@@ -61,4 +61,4 @@ for i in range(3, 0, -1):
     time.sleep(1)
 
 # --- Redirect to login page (main.py) ---
-st.switch_page("main")
+st.switch_page("main.py")
