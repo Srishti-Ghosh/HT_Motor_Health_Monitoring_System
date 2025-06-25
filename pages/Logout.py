@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-st.set_page_config(page_title="HT Motor Diagnostics", page_icon="⚙️", layout="centered")
+st.set_page_config(page_title="Logout")
 
 # --- Hide Sidebar ---
 st.markdown("""
