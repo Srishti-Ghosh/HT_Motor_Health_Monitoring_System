@@ -102,6 +102,8 @@ def classify_insulation_health(ir, pi, dd, td_20, td_100, cap_tipup):
     }
 
 # ----------- Streamlit UI -----------
+st.set_page_config(page_title="HT Motor Diagnostics", page_icon="⚙️", layout="centered")
+
 if not st.session_state.get("logged_in", False):
     st.error("Please login first.")
     if st.button("🔁 Go to Login"):
