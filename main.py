@@ -4,7 +4,7 @@ from PIL import Image
 import time
 
 # ✅ SET PAGE CONFIG FIRST
-st.set_page_config(page_title="HT Motor Login", page_icon="🔐", layout="centered")
+st.set_page_config(page_title="HT Motor Diagnostics", page_icon="⚙️", layout="centered")
 
 # ✅ Hide sidebar (after page config)
 st.markdown("""
