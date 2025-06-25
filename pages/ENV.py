@@ -11,6 +11,8 @@ import seaborn as sns
 import re
 
 # ------------------------ Page Config ------------------------
+st.set_page_config(page_title="HT Motor Diagnostics", page_icon="⚙️", layout="centered")
+
 if not st.session_state.get("logged_in", False):
     st.error("Please login first.")
     if st.button("🔁 Go to Login"):
