@@ -102,7 +102,7 @@ def classify_insulation_health(ir, pi, dd, td_20, td_100, cap_tipup):
     }
 
 # ----------- Streamlit UI -----------
-st.set_page_config(page_title="HT Motor Diagnostics", page_icon="⚙️", layout="centered")
+st.set_page_config(page_title="LEAP")
 
 if not st.session_state.get("logged_in", False):
     st.error("Please login first.")
@@ -149,7 +149,7 @@ with st.sidebar:
 
     # 🔓 Logout
     if st.button("🔓 Logout"):
-        st.switch_page("pages/Logout.py")  
+        st.switch_page("pages/Logout.py")    
     
     st.markdown("""
         <div style='
