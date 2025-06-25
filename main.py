@@ -43,7 +43,7 @@ if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
 if st.session_state.logged_in:
-    st.switch_page("pages/Home.py")
+    st.switch_page("Home")
 
 # Render login UI
 st.markdown(f"""
@@ -76,7 +76,7 @@ with st.container():
                 st.session_state.user = username
                 st.success("✅ Login successful! Redirecting...")
                 time.sleep(2)  # Pause for 2 second
-                st.switch_page("pages/Home.py")
+                st.switch_page("Home")
 
             else:
                 st.error("❌ Invalid username or password.")
