@@ -11,7 +11,7 @@ import seaborn as sns
 import re
 
 # ------------------------ Page Config ------------------------
-st.set_page_config(page_title="ENV")
+st.set_page_config(page_title="HT Motor Environmental Damage", layout="wide", page_icon="⚙️")
 
 if not st.session_state.get("logged_in", False):
     st.error("Please login first.")
@@ -190,7 +190,7 @@ if uploaded_file:
             'Temperature':  np.array([0.6, 0.5, 0.5, 0.8, 0.6])
         }
         damage_types = list(reference_patterns.keys())
-        ref_matrix = np.vstack(list(reference_patterns.values()))  # ✅ Fixed
+        ref_matrix = np.vstack(reference_patterns.values())
         ref_scaled = StandardScaler().fit_transform(ref_matrix)
 
         st.success(f"✅ Processing {len(df)} motors...")
