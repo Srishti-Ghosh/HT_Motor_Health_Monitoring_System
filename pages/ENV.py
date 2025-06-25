@@ -14,7 +14,7 @@ import re
 if not st.session_state.get("logged_in", False):
     st.error("Please login first.")
     if st.button("🔁 Go to Login"):
-        st.switch_page("main.py")
+        st.switch_page("main")
     st.stop()
 
 # Simulate logged-in user (replace with session-based logic)
@@ -46,17 +46,17 @@ with st.sidebar:
     # Navigation
     st.markdown("---")
     st.markdown("## Navigation")
-    st.page_link("pages/Home.py", label="🏠 Diagnostics Dashboard")
-    st.page_link("pages/RUL.py", label="📆 RUL & Health Estimation")
-    st.page_link("pages/LEAP.py", label="🧪 LEAP Test Analyzer")
-    st.page_link("pages/ENV.py", label="🏭 Environmental Damage Mapping")
+    st.page_link("Home", label="🏠 Diagnostics Dashboard")
+    st.page_link("RUL", label="📆 RUL & Health Estimation")
+    st.page_link("LEAP", label="🧪 LEAP Test Analyzer")
+    st.page_link("ENV", label="🏭 Environmental Damage Mapping")
 
     st.markdown("<div style='height: 90px;'></div>", unsafe_allow_html=True)
     st.markdown("---")
 
     # 🔓 Logout
     if st.button("🔓 Logout"):
-        st.switch_page("pages/Logout.py")  
+        st.switch_page("Logout")  
     
     st.markdown("""
         <div style='
