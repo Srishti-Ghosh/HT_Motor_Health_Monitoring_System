@@ -2,6 +2,8 @@
 
 A comprehensive AI-driven web application built with **Streamlit** to monitor, diagnose, and analyze **HT Motor insulation health**, **environmental damage**, and **predict remaining useful life (RUL)** using **LEAP+ test data** and unsupervised clustering.
 
+[🔗 See Live Demo](https://ht-motor-health-monitoring-system.streamlit.app/)
+
 ---
 
 ## 🌟 Features
