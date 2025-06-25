@@ -1,9 +1,6 @@
 import streamlit as st
 import time
 
-# --- Page Config ---
-st.set_page_config(page_title="Logging Out...", layout="centered")
-
 # --- Hide Sidebar ---
 st.markdown("""
     <style>
