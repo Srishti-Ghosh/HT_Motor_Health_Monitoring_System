@@ -8,12 +8,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # ------------------------ Page Config ------------------------
-st.set_page_config(page_title="Home")
+st.set_page_config(page_title="HT Motor Dashboard", layout="wide", page_icon="🏠")
 
 if not st.session_state.get("logged_in", False):
     st.error("Please login first.")
     if st.button("🔁 Go to Login"):
-        st.switch_page("main")
+        st.switch_page("main.py")
     st.stop()
 
 # Simulate logged-in user (replace with session-based logic)
