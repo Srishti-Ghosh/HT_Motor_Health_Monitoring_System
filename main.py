@@ -6,6 +6,12 @@ import time
 # ✅ SET PAGE CONFIG FIRST
 st.set_page_config(page_title="HT Motor Diagnostics", page_icon="⚙️", layout="centered")
 
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
+
+if st.session_state.logged_in:
+    st.switch_page("Home")
+
 # ✅ Hide sidebar (after page config)
 st.markdown("""
     <style>
@@ -38,12 +44,6 @@ users = {
     "admin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4", #1234
     "engineer": "88d4266fd4e6338d13b845fcf289579d209c897823b9217da3e161936f031589" #abcd
 }
-
-if "logged_in" not in st.session_state:
-    st.session_state.logged_in = False
-
-if st.session_state.logged_in:
-    st.switch_page("Home")
 
 # Render login UI
 st.markdown(f"""
